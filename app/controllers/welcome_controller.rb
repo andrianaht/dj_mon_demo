@@ -1,7 +1,6 @@
 class WelcomeController < ApplicationController
 
   def index
-    Delayed::Job.destroy_all
     seed_data if no_data
     redirect_to dj_mon_url
   end
