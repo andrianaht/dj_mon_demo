@@ -1,5 +1,6 @@
-PATH
-  remote: /Users/akshayrawat/oss/dj_mon
+GIT
+  remote: https://github.com/akshayrawat/dj_mon.git
+  revision: 2ee726e0753342c332dcda33b1a761a408eb6971
   specs:
     dj_mon (0.0.6)
       haml (~> 3.1)
