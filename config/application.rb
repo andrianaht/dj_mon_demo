@@ -54,6 +54,8 @@ module DjMonDemo
     config.active_record.whitelist_attributes = true
 
     config.assets.initialize_on_precompile = false
+    config.assets.precompile += %w( dj_mon.js dj_mon.css)
+
     # Enable the asset pipeline
     config.assets.enabled = true
 
