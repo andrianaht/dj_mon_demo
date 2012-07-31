@@ -1,7 +1,7 @@
 class WelcomeController < ApplicationController
 
   def index
-    seed_data if no_data
+    seed_data if stale?
     redirect_to dj_mon_url
   end
 
@@ -18,8 +18,8 @@ class WelcomeController < ApplicationController
     12.times { |i| Email.new.delay(priority: i).deliver }
   end
 
-  def no_data
-    DjMon::DjReport.dj_counts.values.any?(&:zero?)
+  def stale?
+    Delayed::Job.where('updated_at > ?',  1.hour.ago).present?
   end
 
 end
