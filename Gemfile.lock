@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/akshayrawat/dj_mon.git
-  revision: 57130a1443d3e8374a9932433a64128d9c5be6e6
+  revision: 5a1c38fd8b6cacbfdd890ee0349c84d25d8d6d57
   specs:
     dj_mon (0.1.2)
       haml (~> 3.1)
