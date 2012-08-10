@@ -19,7 +19,7 @@ class WelcomeController < ApplicationController
   end
 
   def stale?
-    Delayed::Job.where('updated_at < ?',  1.hour.ago).present? || Delayed::Job.count.zero?
+    Delayed::Job.where(updated_at: { '$lt'=>  1.hour.ago }).present? || Delayed::Job.count.zero?
   end
 
 end

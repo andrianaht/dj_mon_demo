@@ -2,12 +2,14 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
 
-gem 'pg'
+gem 'mongoid'
+gem 'bson_ext'
+
 gem 'thin'
 gem 'heroku'
 gem 'foreman'
 
-gem 'delayed_job_active_record'
+gem 'delayed_job_mongoid'
 
 # gem 'dj_mon', '0.1.1'
 gem 'dj_mon', git: 'https://github.com/akshayrawat/dj_mon.git'
