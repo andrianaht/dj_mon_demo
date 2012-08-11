@@ -2,8 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
 
-gem 'mongoid'
+gem 'mongo'
 gem 'bson_ext'
+gem 'mongoid'
 
 gem 'thin'
 gem 'heroku'
