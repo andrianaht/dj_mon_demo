@@ -138,7 +138,6 @@ DEPENDENCIES
   foreman
   heroku
   mongo
-  mongoid
   rails (= 3.2.1)
   thin
   uglifier (>= 1.0.3)

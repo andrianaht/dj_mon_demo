@@ -6,13 +6,11 @@ gem 'rails', '3.2.1'
 
 gem 'mongo'
 gem 'bson_ext'
-gem 'mongoid'
+gem 'delayed_job_mongoid'
 
 gem 'thin'
 gem 'heroku'
 gem 'foreman'
-
-gem 'delayed_job_mongoid'
 
 gem 'dj_mon', '0.2.0'
 # gem 'dj_mon', git: 'https://github.com/akshayrawat/dj_mon.git'
